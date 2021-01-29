@@ -5,26 +5,46 @@ import axios from "axios";
 const FormBuah = () => {
   
   // const [buah, setBuah] = useContext(BuahContext);
-  const [name, setName] = useContext(BuahContext);
-  const [price, setPrice] = useContext(BuahContext);
-  const [weight, setWeight] = useContext(BuahContext);
+  const [{ setChange, name, setName, price, setPrice, weight, setWeight, edit, setEdit, id, setId }] = useContext(
+    BuahContext
+  );
 
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios
-      .post("http://backendexample.sanbercloud.com/api/fruits", {
-        name,
-        price: '2222',
-        weight: 0
-      })
-      .then((res) => {
-        console.log(res)
-        console.log("Success")
-      });
+    const data = {
+      name,
+      price,
+      weight,
+    };
+    if (edit) {
+      axios
+        .put(`http://backendexample.sanbercloud.com/api/fruits/${id}`, data)
+        .then((res) => {
+          setChange(true);
+        })
+        .catch((err) => console.log(err))
+        .finally(() => {
+          console.log('Berhasil Edit')
+        });
+    } else {
+      axios
+        .post("http://backendexample.sanbercloud.com/api/fruits", data)
+        .then((res) => {
+          console.log(res)
+          console.log("Success")
+          setChange(true)
+        })
+        .catch((err) => console.log("Error", err))
+        .finally(()=>console.log("Fect API success"));
+    }
 
     //Kosongin Form
+    setEdit(false)
+    setId(false)
     setName("")
+    setPrice("")
+    setWeight("")
   };
 
   useEffect(() => {

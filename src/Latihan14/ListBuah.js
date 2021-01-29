@@ -3,7 +3,19 @@ import axios from "axios"
 import { BuahContext } from "./BuahContext";
 
 const BuahList = () => {
-  const [buah, setBuah] = useContext(BuahContext);
+  const [
+    {
+      buah,
+      setBuah,
+      change,
+      setChange,
+      setName,
+      setPrice,
+      setWeight,
+      setEdit,
+      setId,
+    },
+  ] = useContext(BuahContext);
 
   useEffect(() => {
     axios
@@ -13,12 +25,21 @@ const BuahList = () => {
         setBuah(e.data)
       })
       .catch((err) => console.log(err))
-      .finally(() => console.log("Hai 16"))
-  }, [setBuah]);
+      .finally(() => setChange(false))
+  }, [setBuah, change]);
 
   useEffect(() => {
     console.log('Change 2')
   }, [buah])
+
+  const handleDelete = (event) => {
+    axios
+      .delete(`http://backendexample.sanbercloud.com/api/fruits/${event}`)
+      .then((res) => {
+        setChange(true);
+      })
+      .catch((err) => console.log(err));
+  }
 
   return (
     <>
@@ -30,7 +51,7 @@ const BuahList = () => {
             <th>Nama</th>
             <th>Harga</th>
             <th>Berat</th>
-            {/* <th>Aksi</th> */}
+            <th>Aksi</th>
           </tr>
         </thead>
         <tbody>
@@ -41,16 +62,16 @@ const BuahList = () => {
                 <td>{val.name}</td>
                 <td>{val.price}</td>
                 <td>{val.weight / 1000} kg</td>
-                {/* <td>
+                <td>
                   <button
-                    onClick={() => {
+                    onClick={(e) => {
                       setId(val.id);
                       setEdit(true);
                       buah.filter((e) => {
                         if (e.id === val.id) {
-                          setInputName(e.name);
-                          setInputHarga(e.price);
-                          setInputBerat(e.weight);
+                          setName(e.name);
+                          setPrice(e.price);
+                          setWeight(e.weight);
                         }
                       });
                     }}
@@ -59,12 +80,13 @@ const BuahList = () => {
                   </button>
                   <button
                     onClick={() => {
+                      
                       handleDelete(val.id);
                     }}
                   >
                     Delete
                   </button>
-                </td> */}
+                </td>
               </tr>
             );
           })}

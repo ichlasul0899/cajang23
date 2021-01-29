@@ -92,15 +92,6 @@ const BuahList = () => {
           })}
         </tbody>
       </table>
-      {/* <ul>
-        {buah && buah.map((el) => {
-          return (
-            <li>
-              name: {el.name}
-            </li>
-          );
-        })}
-      </ul> */}
     </>
   );
 };

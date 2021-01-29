@@ -1,8 +1,6 @@
 import React, {useState, createContext} from 'react'
 
 export const BuahContext = createContext();
-
-
 export const BuahProvider = (props) => {
   const [buah, setBuah] = useState([])
   const [name, setName] = useState("")
@@ -12,12 +10,7 @@ export const BuahProvider = (props) => {
   const [id, setId] = useState(false);
   const [edit, setEdit] = useState(false);
 
-
-
   return (
-    // <BuahContext.Provider value={([buah, setBuah], [price, setPrice], [weight, setWeight], [name, setName])}>
-    //   {props.children}
-    // </BuahContext.Provider>
     <BuahContext.Provider
       value={
         ([{

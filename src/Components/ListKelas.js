@@ -47,8 +47,7 @@ const ListKelas = () => {
   return (
     <div>
       {daftarMateri.map((materi) => {
-      
-      return <MateriCard data={materi} />;; 
+        return <MateriCard data={materi} />;
       })}
     </div>
   )

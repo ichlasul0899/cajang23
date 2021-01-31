@@ -8,6 +8,7 @@ import {
 import KelasSaya from '../../Components/KelasSaya'
 import ListKelas from '../../Components/ListKelas'
 import Profile from '../../Components/Profile'
+import KelasTraining from '../../Components/KelasTraining'
 
 const Dasbor = () => {
   let match = useRouteMatch();
@@ -20,15 +21,16 @@ const Dasbor = () => {
       <div>
         <ul>
           <li>
-            <Link to={`${match.url}/list-kelas`}>
-              Daftar Kelas Baru
-            </Link>
+            <Link to={`${match.url}/list-kelas`}>Daftar Kelas Baru</Link>
           </li>
           <li>
             <Link to={`${match.url}/kelas-saya`}>Kelas Saya</Link>
           </li>
           <li>
             <Link to={`${match.url}/profil-saya`}>Edit Profile</Link>
+          </li>
+          <li>
+            <Link to={`${match.url}/kelas-training/1`}>Kelas Training</Link>
           </li>
         </ul>
       </div>
@@ -43,6 +45,9 @@ const Dasbor = () => {
         <Route path={`${match.path}/kelas-saya`}>
           <KelasSaya />
         </Route>
+        <Route path={`${match.path}/kelas-training/:id`}>
+          <KelasTraining />
+        </Route>
         <Route path={match.path}>
           <h3>Home Dasboard</h3>
         </Route>
@@ -50,7 +55,6 @@ const Dasbor = () => {
     </div>
   );
 }
-
 
 
 export default Dasbor

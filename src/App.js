@@ -7,8 +7,9 @@ import User from './Pages/User/User'
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import Dasbor from './Pages/Dasbor/Dasbor'
+import KelasTraining from './Components/KelasTraining'
 
-import {ThemeProvider} from './theme-context'
+import { ThemeProvider } from './theme-context'
 
 const App = () => {
   return (
@@ -50,6 +51,9 @@ const App = () => {
             </Route>
             <Route path="/register">
               <Register />
+            </Route>
+            <Route path="/dasbor/kelas-training/:id">
+              <KelasTraining />
             </Route>
             <Route path="/dasbor">
               <Dasbor />

@@ -1,0 +1,61 @@
+.backgroundLp{
+  min-height: 400px;
+  padding: 20px;
+  background: url('../../assets/image/bg.jpg');
+  display: flex;
+  justify-content: center;
+
+}
+
+.backgroundKelas{
+  padding: 20px;
+  background-color: rgb(212, 134, 134);
+  display: flex;
+  justify-content: center;
+}
+
+.backgroundStatistik{
+  background-color: rgb(243, 122, 122);
+  padding: 20px;
+}
+
+.mycontainer{
+  /* border: 1px solid black; */
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mybutton{
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.mycontainer a{
+  color: white
+}
+
+.containerKelas{
+  width: 80%;
+  text-align: center;
+}
+
+.listKelas {
+  display: flex;
+  justify-content: center;
+
+}
+
+.backgroundSosmed{
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+

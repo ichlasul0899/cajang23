@@ -9,6 +9,7 @@ import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import Dasbor from './Pages/Dasbor/Dasbor'
 import KelasTraining from './Components/KelasTraining'
+import Header from './Components/Header'
 
 import { ThemeProvider } from './theme-context'
 
@@ -17,28 +18,7 @@ const App = () => {
     <Router>
       <ThemeProvider>
         <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/user">Users</Link>
-              </li>
-              <li>
-                <Link to="/login">Login</Link>
-              </li>
-              <li>
-                <Link to="/register">Register</Link>
-              </li>
-              <li>
-                <Link to="/dasbor">Dasbor</Link>
-              </li>
-            </ul>
-          </nav>
+          <Header />
 
           <Switch>
             <Route path="/about">

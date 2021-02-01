@@ -4,6 +4,7 @@ import './Home.css'
 import ScoreCard from '../../Components/ScoreCard'
 import KelasCard from "../../Components/KelasCard";
 import Footer from "../../Components/Footer";
+import CTE from "../../assets/image/CTELOGO.png";
 
 
 const Home = () => {
@@ -72,18 +73,46 @@ const Home = () => {
     <div>
       <div className="backgroundLp">
         <div className="mycontainer">
-          <h1>Wujudkan Karirmu Sebagai Programmer</h1>
-          <p>
-            Kuasai skill pemrograman dalam waktu singkat. Kamu akan dilatih oleh
-            instruktur profesional untuk menjadi seorang Full Stack Developer.
-          </p>
-          <Link className="mybutton" to="/register">
-            Daftar Sekarang
-          </Link>
+          <div style={{ width: "70%", padding: '20px 0' }}>
+            <h2 style={{margin: '0'}}>Wujudkan Karirmu Sebagai Programmer</h2>
+            <p>
+              Kuasai skill pemrograman dalam waktu singkat. Kamu akan dilatih
+              oleh instruktur profesional untuk menjadi seorang Full Stack
+              Developer.
+            </p>
+            <div style={{backgroundColor: '#eaeaea', margin: '20px 0', padding: '20px', borderRadius: '10px'}}>
+              <div style={{ display: "flex", alignContent: "center" }}>
+                <img width="80px" height="80px" src={CTE} alt="" />
+                <div style={{ marginLeft: "20px", textAlign: "left" }}>
+                  <h3 style={{ margin: "0" }}>CTE</h3>
+                  <p>
+                    Cajang Tech Edu (CTE) adalah Program pembelajaran untuk
+                    pemula yang ingin menjadi seorang Full Stack Developer.
+                  </p>
+                </div>
+              </div>
+              <div style={{ display: "flex", alignContent: "center" }}>
+                <img width="80px" height="80px" src={CTE} alt="" />
+                <div style={{ marginLeft: "20px", textAlign: "left" }}>
+                  <h3 style={{ margin: "0" }}>CTE</h3>
+                  <p>
+                    Cajang Tech Edu (CTE) adalah Program pembelajaran untuk
+                    pemula yang ingin menjadi seorang Full Stack Developer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <Link className="mybutton" to="/register">
+              Daftar Sekarang
+            </Link>
+          </div>
+          {/* <div style={{ border: "1px solid red" }}>
+            <h2>Hai</h2>
+          </div> */}
         </div>
       </div>
       <div className="backgroundStatistik">
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div style={{ display: "flex", }}>
           {scores.map((score) => {
             return <ScoreCard data={score} />;
           })}
@@ -107,7 +136,7 @@ const Home = () => {
       </div> */}
       <div className="backgroundKelas">
         <div className="containerKelas">
-          <h2>Kelas Dasar</h2>
+          <h2 style={{ color: "white" }}>Kelas Dasar</h2>
           <div className="listKelas">
             {paket.map((kelas, index) => {
               return <KelasCard data={kelas} />;
@@ -149,7 +178,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
+
       <Footer />
     </div>
   );

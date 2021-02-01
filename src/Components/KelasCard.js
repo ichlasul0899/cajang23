@@ -20,10 +20,10 @@ const KelasCard = ({ data }) => {
           <h3>{judul}</h3>
         </div>
 
-        <p>{descripsi}</p>
+        {/* <p>{descripsi}</p> */}
         <p>{price}</p>
-        <p>{score}</p>
-        <p>{autho}</p>
+        {/* <p>{score}</p> */}
+        {/* <p>{autho}</p> */}
       </div>
       <button style={{
         backgroundColor: 'black',

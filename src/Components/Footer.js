@@ -1,18 +1,28 @@
 import React from 'react'
+import CTE from '../assets/image/CTELOGO.png'
 
 const Footer = () => {
   return (
-    <div style={{ backgroundColor: "black", padding: "20px", color: "white", padding: '0 10%' }}>
+    <div
+      style={{
+        backgroundColor: "black",
+        padding: "20px",
+        color: "white",
+        padding: "20px 10%",
+      }}
+    >
       <div>
-        <div style={{  width: "50%" }}>
-          <div>
-            <img src="" alt="" />
-            <h3>CTE</h3>
+        <div style={{ width: "50%" }}>
+          <div style={{ display: "flex", alignContent: 'center',  }}>
+            <img width="80px" height="80px" src={CTE} alt="" />
+            <div style={{ marginLeft: "20px" , textAlign: 'left'}}>
+              <h3 style={{margin: '0'}}>CTE</h3>
+              <p>
+                Cajang Tech Edu (CTE) adalah Program pembelajaran untuk pemula
+                yang ingin menjadi seorang Full Stack Developer.
+              </p>
+            </div>
           </div>
-          <p>
-            Cajang Tech Edu (CTE) adalah Program pembelajaran untuk pemula yang
-            ingin menjadi seorang Full Stack Developer.
-          </p>
         </div>
         <div style={{ display: "flex" }}>
           <div style={{ marginRight: "100px" }}>

@@ -9,16 +9,16 @@ import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import Dasbor from './Pages/Dasbor/Dasbor'
 import KelasTraining from './Components/KelasTraining'
-import Header from './Components/Header'
 
 import { ThemeProvider } from './theme-context'
 
 const App = () => {
+
+  
   return (
     <Router>
       <ThemeProvider>
         <div>
-          <Header />
 
           <Switch>
             <Route path="/about">

@@ -5,6 +5,7 @@ import ScoreCard from '../../Components/ScoreCard'
 import KelasCard from "../../Components/KelasCard";
 import Footer from "../../Components/Footer";
 import CTE from "../../assets/image/CTELOGO.png";
+import Header from "../../Components/Header";
 
 
 const Home = () => {
@@ -71,16 +72,25 @@ const Home = () => {
 
   return (
     <div>
+      <Header />
+
       <div className="backgroundLp">
         <div className="mycontainer">
-          <div style={{ width: "70%", padding: '20px 0' }}>
-            <h2 style={{margin: '0'}}>Wujudkan Karirmu Sebagai Programmer</h2>
+          <div style={{ width: "70%", padding: "20px 0" }}>
+            <h2 style={{ margin: "0" }}>Wujudkan Karirmu Sebagai Programmer</h2>
             <p>
               Kuasai skill pemrograman dalam waktu singkat. Kamu akan dilatih
               oleh instruktur profesional untuk menjadi seorang Full Stack
               Developer.
             </p>
-            <div style={{backgroundColor: '#eaeaea', margin: '20px 0', padding: '20px', borderRadius: '10px'}}>
+            <div
+              style={{
+                backgroundColor: "#eaeaea",
+                margin: "20px 0",
+                padding: "20px",
+                borderRadius: "10px",
+              }}
+            >
               <div style={{ display: "flex", alignContent: "center" }}>
                 <img width="80px" height="80px" src={CTE} alt="" />
                 <div style={{ marginLeft: "20px", textAlign: "left" }}>
@@ -112,7 +122,7 @@ const Home = () => {
         </div>
       </div>
       <div className="backgroundStatistik">
-        <div style={{ display: "flex", }}>
+        <div style={{ display: "flex" }}>
           {scores.map((score) => {
             return <ScoreCard data={score} />;
           })}

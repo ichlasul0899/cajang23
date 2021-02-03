@@ -25,6 +25,14 @@ You will also see any lint errors in the console.
 
 Descripsi : Sebuah wesite informasi dan learning management system untuk programmer pemula. Kamu bisa beli kelas dan mendapatkan instruktur personal dengan bayaran seikhlas nya. 
 
+### Daftar Kelas
+
+### `Version Control: Git & Github`
+### `BackEnd: Node Js, Express, Mongo DB`
+### `FrontEnd: HTML5, CSS3, JS`
+### `FrontEnd Lanjut: Js React JS`
+###
+
 ### Use Case
 
 ### ==> `User POST Login`

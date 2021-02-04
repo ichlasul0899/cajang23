@@ -45,12 +45,12 @@ const ListKelas = () => {
     },
   ]);
   return (
-    <div>
+    <div style={{ padding: "20px", border: "1px solid orange" }}>
       {daftarMateri.map((materi) => {
         return <MateriCard data={materi} />;
       })}
     </div>
-  )
+  );
 }
 
 export default ListKelas

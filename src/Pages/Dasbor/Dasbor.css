@@ -1,0 +1,10 @@
+.mySidebar ul{
+ display: flex;
+ flex-direction: row;
+
+}
+
+.mySidebar ul li a{
+  color:black;
+  border: 1px solid black;
+}

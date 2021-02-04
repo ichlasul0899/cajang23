@@ -31,7 +31,6 @@ Descripsi : Sebuah wesite informasi dan learning management system untuk program
 ### `BackEnd: Node Js, Express, Mongo DB`
 ### `FrontEnd: HTML5, CSS3, JS`
 ### `FrontEnd Lanjut: Js React JS`
-###
 
 ### Use Case
 
@@ -46,4 +45,88 @@ Descripsi : Sebuah wesite informasi dan learning management system untuk program
 ### ==> `User GET ListInfoTugas`
 ### ==> `User GET rekapitulasiNilai`
 ### ==> `User GET rangkingNilai` 
+
+
+### ==> `Machine Learning`
+
+Dari Indonesia ke jepang, Machine Learning, Data Scientist
+
+Cajang Tech Education ==>
+
+Kompetitor = [
+  {
+    name: 'HackTivat Technolgy : H8'
+  },
+  {
+    name: 'Arkademy Tech Academy'
+  },
+  {
+    name: 'Sanber Code'
+  },
+  {
+    name: 'Shift Academy'
+  }
+]
+
+Divisi Marketing:
+instagram: 
+youtube:
+discord:
+
+- Plan : Minggu ini selesai fungtional frontend nya
+- Plan minggu ke 2: Rencana bikin materi dan record materi
+
+Materi: {
+  Slide Power Point (Untuk Pengajaran Bukan Di share): '',
+  Video (Live Code Instructur simpan di youtube): '',
+  Bahan: 'Paragraf'
+}
+
+8 kelas sd  9 : Direcord. Disimpan di drive.
+
+1 Hari teacher dan student bikin jadwal.
+Ini mentoring 1 persatu.
+
+PersonalProgrammer
+
+FGD: 5 orang 
+
+Awal nya : 10 k aja, 
+
+1 : rafif
+
+Daftar di kelas Version Control.
+Beli materi 50k.
+
+Untuk mentoring: 5x mentoring. 50.000
+Selesai Mentooring: Lo mau bayar lebih ga ? gw udah capek. 50.000
+
+Perpaket : 100.000
+Materi + 5x Mentoring(2 Jam x 5 = 10 Jam)
+
+Aksi : 
+Daffa : 2 Student
+Ichlas : 2 Student
+
+Ekspektasi Setelah 1 bulan: 
+- Kita punya Experience, dan statistik student lebih dari 5
+- Instagram minimal 9 post.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

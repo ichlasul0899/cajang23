@@ -45,18 +45,19 @@ const KelasSaya = () => {
   }, [])
 
   return (
-    <div>
-      <h3>
+    <div style={{padding: '20px', border: '1px solid orange'}}>
+      {/* <h3>
         Kelas saya: React js, data disini fetch ke api aja/ atau pas di dasboard
         langsung fetch seluruh data masukin ke state mangemnet supaya lancar
         jaya.
-      </h3>
+      </h3> */}
 
       <table border="1">
         <thead>
           <tr>
+            <th>No</th>
             <th>Nama Kelas</th>
-            <th>Deskripsi</th>
+            {/* <th>Deskripsi</th> */}
             <th>Tanggal Mulai</th>
             <th>Tanggal Selesai</th>
             <th>Status</th>

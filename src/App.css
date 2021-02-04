@@ -42,35 +42,5 @@ a{
 }
 
 
-ul{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-ul li{
-  height: fit-content;
-  margin: 0 0 0 20px;
-  padding: 10px 25px;
-  border-radius: 5px; 
-  border: 1px solid white;
-  
-}
-
-ul li:hover {
-  border: 1px solid black;
-}
-
-img{
-  cursor: pointer
-}
-
-img:hover {
-  border-radius: 50%;
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
 
 
